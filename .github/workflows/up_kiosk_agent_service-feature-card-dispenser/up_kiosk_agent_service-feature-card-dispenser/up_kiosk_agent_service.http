@@ -1,0 +1,6 @@
+@up_kiosk_agent_service_HostAddress = http://localhost:5170
+
+GET {{up_kiosk_agent_service_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
