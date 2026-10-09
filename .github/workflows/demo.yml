@@ -24,8 +24,11 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4]
-      - name: List files
-        run: dir
+      - name: Show files
+        shell: powershell
+        run: |
+          dir
+          dir up_kiosk_agent_service-feature-card-dispenser
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
